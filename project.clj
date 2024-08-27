@@ -6,6 +6,11 @@
   :dependencies [[org.clojure/clojure "1.11.1"]
                  [ring/ring-core "1.7.1"]
                  [ring/ring-jetty-adapter "1.7.1"],
-                 [org.clojure/data.json "2.5.0"]]
+                 [org.clojure/data.json "2.5.0"],
+                 [com.github.seancorfield/honeysql "2.6.1147"],
+                 [org.postgresql/postgresql "42.7.2"],
+                 [com.github.seancorfield/next.jdbc "1.3.939"],
+                 [com.zaxxer/HikariCP "5.1.0"],
+                 [org.slf4j/slf4j-api "2.0.12"]]
   :repl-options {:init-ns art-of-joy-clojure.core}
   :main art-of-joy-clojure.core)
