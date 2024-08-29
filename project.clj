@@ -11,6 +11,7 @@
                  [org.postgresql/postgresql "42.7.2"],
                  [com.github.seancorfield/next.jdbc "1.3.939"],
                  [com.zaxxer/HikariCP "5.1.0"],
-                 [org.slf4j/slf4j-api "2.0.12"]]
+                 [org.slf4j/slf4j-api "2.0.12"],
+                 [aero "1.1.6"]]
   :repl-options {:init-ns art-of-joy-clojure.core}
   :main art-of-joy-clojure.core)

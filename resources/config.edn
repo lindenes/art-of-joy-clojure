@@ -1,0 +1,9 @@
+{
+ :db{
+     :url #env "DB_URL"
+     :user #env "DB_USER"
+     :password #env "DB_PASSWORD"
+     :max_pool_size #env "DB_MAX_POOL_SIZE"
+   }
+
+}
