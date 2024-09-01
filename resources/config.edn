@@ -1,9 +1,13 @@
 {
  :db{
-     :url #env "DB_URL"
-     :user #env "DB_USER"
-     :password #env "DB_PASSWORD"
-     :max_pool_size #env "DB_MAX_POOL_SIZE"
+     :url #env "ART_OF_JOY_DB_URL"
+     :user #env "ART_OF_JOY_DB_USER"
+     :password #env "ART_OF_JOY_DB_PASSWORD"
+     :max_pool_size #env "ART_OF_JOY_DB_MAX_POOL_SIZE"
    }
-
+ :http{
+      :host #env "ART_OF_JOY_HOST"
+      :port #env "ART_OF_JOY_PORT"
+      :max-thread #env "ART_OF_JOY_MAX_THREAD"
+  }
 }
