@@ -8,7 +8,6 @@
     (.setUsername config (:user db-spec))
     (.setPassword config (:password db-spec))
     (.setMaximumPoolSize config (Integer/parseInt (:max_pool_size db-spec)))
-    (.addDataSourceProperty config "logger" "com.zaxxer.hikari.slf4j.Slf4jLogger")
     config))
 
 (def datasource (HikariDataSource.

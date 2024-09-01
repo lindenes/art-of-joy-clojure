@@ -12,6 +12,8 @@
                  [com.github.seancorfield/next.jdbc "1.3.939"],
                  [com.zaxxer/HikariCP "5.1.0"],
                  [org.slf4j/slf4j-api "2.0.12"],
+                 [ch.qos.logback/logback-classic "1.5.7"],
+                 [ch.qos.logback/logback-core "1.5.7"],
                  [aero "1.1.6"]]
   :repl-options {:init-ns art-of-joy-clojure.core}
   :main art-of-joy-clojure.core)
