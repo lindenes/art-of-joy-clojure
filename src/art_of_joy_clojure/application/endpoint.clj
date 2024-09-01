@@ -3,11 +3,12 @@
   (:require [art-of-joy-clojure.application.service.handler :as handler]))
 
 (defn util_endpoint [request]
-  (case [(:uri request) (:request-method request)]
-    ["/version" :get] {:headers {"Content-Type" "application/json"}
-                       :body "0.0.1"}
-    ["/healthcheck" :get] {:headers {"Content-Type" "application/json"}
-                           :body  ( json/write-str {:ok true} ) }
+  (case
+    [(:uri request) (:request-method request)]
+      ["/version" :get] {:headers {"Content-Type" "application/json"}
+                         :body "0.0.1"}
+      ["/healthcheck" :get] {:headers {"Content-Type" "application/json"}
+                             :body  ( json/write-str {:ok true} ) }
     )
   )
 
