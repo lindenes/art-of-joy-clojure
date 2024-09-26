@@ -12,3 +12,7 @@ pom.xml.asc
 .hgignore
 .hg/
 art-of-joy_clojure.iml
+*.clj~
+*.clj#
+.#*
+.idea/
