@@ -23,6 +23,4 @@
   ))
 
 (defn get-brand []
-  (jdbc/execute! datasource ["select id, name from brand"]
-                 )
-  )
+  (jdbc/execute! datasource ["select id, name from brand"]))

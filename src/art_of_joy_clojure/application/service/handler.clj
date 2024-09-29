@@ -3,13 +3,14 @@
   (:require [art-of-joy-clojure.domain.category_service :as category-service]))
 
 (defn get-category []
-  (let [categories (map (fn [category] (-> category
-                                           (dissoc :subcategories)
-                                           (assoc :subCategories (:subcategories category) )
-                                           ) )  (category-service/get-category) )]
+  (let [categories (map
+                     (fn [category] (-> category
+                                        (dissoc :subcategories)
+                                        (assoc :subCategories (:subcategories category) )
+                                        ))
+                     (category-service/get-category))]
     {:headers {"Content-Type" "application/json"}
-     :body (json/write-str categories)
-     }
+     :body (json/write-str categories)}
     )
   )
 
